@@ -27,11 +27,11 @@ namespace LineComparisionProblem
 
             Console.WriteLine("\n"+"Enter the value for P");
             P = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("\n"+"Enter the value for Q");
+            Console.WriteLine("Enter the value for Q");
             Q = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("\n"+"Enter the value for R");
+            Console.WriteLine("Enter the value for R");
             R = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("\n"+"Enter the value for S");
+            Console.WriteLine("Enter the value for S");
             S = Convert.ToDouble(Console.ReadLine());
 
             double length2 = Math.Sqrt(Math.Pow(P - Q, 2) + Math.Pow(R - S, 2));
