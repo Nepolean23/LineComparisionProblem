@@ -40,58 +40,33 @@ namespace LineComparisionProblem
 
             if (length1 == length2)
             {
-                Console.WriteLine("Both lines are in equal length");
+                Console.WriteLine("\n"+"Both lines are in equal length");
             }
             else if (length1 < length2)
             {
-                Console.WriteLine("length1 is greater than length2");
+                Console.WriteLine("\n"+"length1 is greater than length2");
             }
             else
             {
-                Console.WriteLine("length2 is greater than length1");
+                Console.WriteLine("\n"+"length2 is greater than length1");
             }
 
+            //comparision of length
+            Console.WriteLine("\n" + "Comparision of length l1&l2");
+            int l=length1.CompareTo(length2);
+            Console.WriteLine("\n"+"The value of length is: " + l);
+
+            Console.WriteLine("\n" + "Comparision of Variables X1,Y1,X2,Y2 & P,Q,R,S");
+            //comparision of Variables
             int x = X1.CompareTo(X2);
             int y = Y1.CompareTo(Y2);
             int p = P.CompareTo(Q);
             int q = Q.CompareTo(R);
 
-            if(x==y || p==q)
-            {
-                Console.WriteLine("Both lines are equal");
-            }
-            else if(x<y&&x<p&&x<q)
-            {
-                Console.WriteLine("The value of x is greater:" + x);
-            }
-            else if(y<p&&y<q)
-            {
-                Console.WriteLine("The value of y is greater:" + y);
-            }
-            else if(p<q)
-            {
-                Console.WriteLine("The value of p is greater:" + p);
-            }
-            else
-            {
-                Console.WriteLine("The value of q is greater:" + q);
-            }
-            if (x > y && x >p && x > q)
-            {
-                Console.WriteLine("The value of x is lesser:" + x);
-            }
-            else if (y > p && y > q)
-            {
-                Console.WriteLine("The value of y is lesser:" + y);
-            }
-            else if (p > q)
-            {
-                Console.WriteLine("The value of p is lesser:" + p);
-            }
-            else
-            {
-                Console.WriteLine("The value of q is lesser:" + q);
-            }
+            Console.WriteLine("\n"+"The value of x: "+x);
+            Console.WriteLine("The value of y: "+y);
+            Console.WriteLine("The value of p: "+p);
+            Console.WriteLine("The value of q: "+q);
 
 
         }
