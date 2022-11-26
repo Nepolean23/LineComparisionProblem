@@ -38,6 +38,9 @@ namespace LineComparisionProblem
             double length2 = Math.Sqrt(Math.Pow(P - Q, 2) + Math.Pow(R - S, 2));
             Console.WriteLine("The value of length2:" + length2);
 
+            //Comparision of length1 and length2
+            Console.WriteLine("\n" + "Comparision of length1 and length2");
+
             if (length1 == length2)
             {
                 Console.WriteLine("\n"+"Both lines are in equal length");
@@ -51,22 +54,27 @@ namespace LineComparisionProblem
                 Console.WriteLine("\n"+"length2 is greater than length1");
             }
 
-            //comparision of length
-            Console.WriteLine("\n" + "Comparision of length l1&l2");
-            int l=length1.CompareTo(length2);
-            Console.WriteLine("\n"+"The value of length is: " + l);
+            //Comparing of line using CompareToMethod
+            Console.WriteLine("\n" +"Comparing of line using CompareToMethod");
+                
+            int result=length1.CompareTo(length2);
+            Console.WriteLine("\n"+"The value of length is: " + result);
+            
+            if(result == 0)
+            {
+                Console.WriteLine("\n"+"Lengths are equal");
+            }
+            else if(result>0)
+            {
+                Console.WriteLine("\n" +"line 1 greater than line 2");
+            }
+           else
+            {
+                Console.WriteLine("\n"+"line 2 greater than line 1");
+            }
 
-            Console.WriteLine("\n" + "Comparision of Variables X1,Y1,X2,Y2 & P,Q,R,S");
-            //comparision of Variables
-            int x = X1.CompareTo(X2);
-            int y = Y1.CompareTo(Y2);
-            int p = P.CompareTo(Q);
-            int q = Q.CompareTo(R);
-
-            Console.WriteLine("\n"+"The value of x: "+x);
-            Console.WriteLine("The value of y: "+y);
-            Console.WriteLine("The value of p: "+p);
-            Console.WriteLine("The value of q: "+q);
+         
+          
 
 
         }
